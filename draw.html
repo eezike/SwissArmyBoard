@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+
+	<title>Swiss Army Board</title>
+</head>
+
+<body>
+	<!--toolbox 1-->
+	<div class="toolbox left">
+
+		<!--group commands-->
+		<div class="group commands">
+			<div class="item" data-command="undo" title="undo">
+				<img src="icons/undo-icon.png">
+			</div>
+
+			<div class="item" data-command="download" title="download">
+				<img src="icons/download-icon.png">
+			</div>
+		</div>
+
+		<!--group shapes-->
+		<div class="group shapes">
+			<div class="item active" data-command="line" title="Line Shape">
+				<img src="icons/line-icon.png">
+			</div>
+
+			<div class="item" data-command="rectangle" title="Rectangle Shape">
+				<img src="icons/rect-icon.png">
+			</div>
+
+			<div class="item" data-command="circle" title="Circle Shape">
+				<img src="icons/circle-icon.png">
+			</div>
+
+			<div class="item" active data-command="triangle" title="Triangle Shape">
+				<img src="icons/tri-icon.png">
+			</div>
+
+		</div>
+
+		<!--group tools-->
+		<div class="group tools">
+			<div class="item active"  data-tool="pencil" title="Pencil Tool">
+				<img src="icons/pencil-icon.png">
+			</div>
+
+			<div class="item" active data-tool="brush" title="Brush Tool">
+				<img src="icons/brush-icon.png">
+			</div>
+
+			<div class="item" active data-tool="paint-bucket" title="Paint Fill Tool">
+				<img src="icons/paint-bucket-icon.png">
+			</div>
+			
+			<div class="item" active data-tool="eraser" title="Eraser Tool">
+				<img src="icons/eraser-icon.png">
+			</div>
+		</div>
+
+		<!--group linewidths-->
+		<div class="group linewidths">
+			<div class="item" data-line-width="1" title="1 Pixel">
+				<div class="linewidth" style="width:1px; height:1px"></div>
+			</div>
+
+			<div class="item active" data-line-width="2" title="2 Pixel">
+				<div class="linewidth" style="width:2px; height:2px"></div>
+			</div>
+
+			<div class="item" data-line-width="3" title="3 Pixel">
+				<div class="linewidth" style="width:3px; height:3px"></div>
+			</div>
+
+			<div class="item" data-line-width="4" title="4 Pixel">
+				<div class="linewidth" style="width:4px; height:4px"></div>
+			</div>
+
+			<div class="item" data-line-width="5" title="5 Pixel">
+				<div class="linewidth" style="width:5px; height:5px"></div>
+			</div>
+		</div>
+
+	</div>
+
+	<canvas id="canvas" width="640" height="480"></canvas>
+
+	<!--toolbox right-->
+	<div class="toolbox right">
+
+		<!--group color swatches-->
+		<div class="group swatches">
+			<!--white-->
+			<div class="item" data-color="#ffffff">
+				<div class="swatch" style="background-color: #ffffff;"></div>
+			</div>
+
+			<!--black-->
+			<div class="item active" data-color="#000000">
+				<div class="swatch" style="background-color: #000000;"></div>
+			</div>
+
+			<!--red-->
+			<div class="item" data-color="#ff0000">
+				<div class="swatch" style="background-color: #ff0000;"></div>
+			</div>
+
+			<!--green-->
+			<div class="item" data-color="#00ff00">
+				<div class="swatch" style="background-color: #00ff00;"></div>
+			</div>
+
+			<!--blue-->
+			<div class="item" data-color="#0000ff">
+				<div class="swatch" style="background-color: #0000ff;"></div>
+			</div>
+
+
+			<!--teal-->
+			<div class="item" data-color="#00ffff">
+				<div class="swatch" style="background-color: #00ffff;"></div>
+			</div>
+
+			<!--pink-->
+			<div class="item" data-color="#ffffff">
+				<div class="swatch" style="background-color: #ffffff;"></div>
+			</div>
+
+			<!--yellow-->
+			<div class="item" data-color="#ffffff">
+				<div class="swatch" style="background-color: #ffffff;"></div>
+			</div>
+
+			<!--brown-->
+			<div class="item" data-color="#ffffff">
+				<div class="swatch" style="background-color: #ffffff;"></div>
+			</div>
+
+			<!--orange-->
+			<div class="item" data-color="#ffffff">
+				<div class="swatch" style="background-color: #ffffff;"></div>
+			</div>
+
+			<!--light blue-->
+			<div class="item" data-color="#ffffff">
+				<div class="swatch" style="background-color: #ffffff;"></div>
+			</div>
+
+			<!--purple-->
+			<div class="item" data-color="#ffffff">
+				<div class="swatch" style="background-color: #ffffff;"></div>
+			</div>
+		</div>
+	
+	</div>
+
+
+	<script src="canvas.js"></script>
+</body>
+</html>
